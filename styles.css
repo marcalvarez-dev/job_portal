@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #103a8a;
+    --primary-text: #ffffff;
+    --secondary-text: #c0c0c0;
+    --primary: #3498db;
+    --secondary: #7f868d;
+}
+
+
+body {
+    font-family: system-ui;
+    background-color: var(--background);
+    color: var(--primary-text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
