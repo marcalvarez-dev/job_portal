@@ -5,11 +5,11 @@
 }
 
 :root {
-    --background: #103a8a;
+    --background: #101922;
     --primary-text: #ffffff;
     --secondary-text: #c0c0c0;
-    --primary: #3498db;
-    --secondary: #7f868d;
+    --bg-article: #1E293B;
+
 }
 
 
@@ -21,4 +21,121 @@ body {
     display: flex;
     flex-direction: column;
 
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+
+    }
+
+    div {
+        background: var(--bg-article);
+        border-radius: 5px;
+    }
+}
+
+
+main>section:nth-child(2) header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 5rem;
+    margin-bottom: rem;
+
+    h1 {
+        color: var(--primary-text);
+        margin-bottom: 1rem;
+        font-size: 3rem;
+
+    }
+
+    p {
+        color: var(--secondary-text);
+        text-align: center;
+    }
+}
+
+main>section:nth-child(2) footer {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
+    gap: 16px;
+    padding: 1.5rem;
+
+}
+
+
+article {
+    padding: 4rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 1);
+    text-align: center;
+    margin-bottom: 15rem;
+    margin-top: 5rem;
+    background: var(--bg-article);
+
+    h3 {
+        color: var(--primary-text);
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    p {
+        color: var(--secondary-text);
+        font-size: 1rem;
+
+    }
+
+    svg {
+        width: 64px;
+        height: 64px;
+        border-radius: 100%;
+        padding: 16px;
+        background: #1B3859;
+        color: #1464B5;
+        margin-bottom: 5px;
+    }
+}
+
+#footer {
+    text-align: center;
+    padding: 16px;
+    border-top: 1px solid black;
 }
