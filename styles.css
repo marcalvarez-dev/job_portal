@@ -406,3 +406,14 @@ nav {
     justify-content: center;
     gap: 2rem;
 }
+
+.button-apply {
+    &.is-applied {
+        background: red;
+        pointer-events: none;
+    }
+}
+
+.invisible {
+    display: none !important;
+}

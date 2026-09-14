@@ -7,7 +7,7 @@
     <meta name="description" content="Listado con empleos" />
     <title>Empleos</title>
 </head>
-
+<script type="module" src="script.js"></script>
 
 <body>
     <header>
@@ -49,11 +49,18 @@
                     <input type="text" placeholder="Busca trabajos, empresas o habilidades" />
                 </div>
                 <div>
-                    <select name="select">
-                        <option value="value1">Tecnología</option>
+                    <select id="filter-technology" name="select">
+                        <option value="js">JavaScript</option>
+                        <option value="py">Python</option>
+                        <option value="java">Java</option>
+                        <option value="react">React</option>
+                        <option value="node">Node.js</option>
                     </select>
-                    <select name="select">
+                    <select id="filter-location" name="select">
                         <option value="value1">Ubicación</option>
+                        <option value="remote">Remoto</option>
+                        <option value="barcelona">Barcelona</option>
+                        <option value="madrid">Madird</option>
                     </select>
                     <select name="select">
                         <option value="value1">Tipo de contrato</option>
@@ -64,7 +71,7 @@
                 </div>
 
             </header>
-            <footer>
+            <footer class="jobs-results">
                 <h3>Resultados de busqueda</h3>
                 <article>
                     <div>
@@ -76,7 +83,7 @@
                         </p>
                     </div>
                     <div>
-                        <button> Aplicar </button>
+                        <button class="button-apply" id="important-button"> Aplicar </button>
 
                     </div>
                 </article>
@@ -84,26 +91,26 @@
                 <article>
                     <div>
                         <h2>Analista de Datos</h2>
-                        <h5>Data Driven Co. | Ciudad de México</h5>
+                        <h5>Data Driven Co. | Barcelona</h5>
                         <p>Estamos buscando un analista de datos con experiencia en el manejo de grandes conjuntos de
                             datos y herramientas de visualización. Se requiere conocimiento en SQL, Python y R.
                         </p>
                     </div>
                     <div>
-                        <button>Aplicar</button>
+                        <button class="button-apply">Aplicar</button>
                     </div>
                 </article>
                 <article>
                     <div>
                         <h2>Desarrollador de Aplicaciones Móviles</h2>
-                        <h5>Mobile Apps Ltd. | Guadalajara</h5>
+                        <h5>Mobile Apps Ltd. | Madrid</h5>
                         <p>Buscamos un desarrollador de aplicaciones móviles con experiencia en iOS y/o Android. El
                             candidato debe tener conocimientos en Swift, Kotlin y el desarrollo de interfaces de
                             usuario.
                         </p>
                     </div>
                     <div>
-                        <button>Aplicar</button>
+                        <button class="button-apply">Aplicar</button>
                     </div>
                 </article>
 
@@ -117,7 +124,7 @@
                         </p>
                     </div>
                     <div>
-                        <button>Aplicar</button>
+                        <button class="button-apply">Aplicar</button>
                     </div>
                 </article>
 
