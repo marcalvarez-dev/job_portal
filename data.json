@@ -1,0 +1,146 @@
+[
+    {
+        "id": "1",
+        "titulo": "Ingeniero de Software",
+        "empresa": "Tech Solutions Inc.",
+        "ubicacion": "Remoto",
+        "descripcion": "Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en React. El candidato ideal debe ser capaz de trabajar en equipo y tener buenas habilidades de comunicación.",
+        "data": {
+            "technology": "react",
+            "modalidad": "remoto",
+            "nivel": "semi-senior"
+        }
+    },
+    {
+        "id": "2",
+        "titulo": "Frontend Developer React",
+        "empresa": "UI Factory",
+        "ubicacion": "Barcelona",
+        "descripcion": "Buscamos desarrollador frontend con experiencia en React, gestión de estado con Redux y consumo de APIs REST. Valorable experiencia con TypeScript.",
+        "data": {
+            "technology": "react",
+            "modalidad": "barcelona",
+            "nivel": "semi-senior"
+        }
+    },
+    {
+        "id": "3",
+        "titulo": "React Developer Senior",
+        "empresa": "StartUp Labs",
+        "ubicacion": "Madrid",
+        "descripcion": "Empresa en crecimiento busca desarrollador React senior para liderar la migración de una aplicación legacy a una arquitectura moderna basada en componentes.",
+        "data": {
+            "technology": "react",
+            "modalidad": "madrid",
+            "nivel": "senior"
+        }
+    },
+    {
+        "id": "4",
+        "titulo": "Analista de Datos",
+        "empresa": "Data Driven Co.",
+        "ubicacion": "Barcelona",
+        "descripcion": "Estamos buscando un analista de datos con experiencia en el manejo de grandes conjuntos de datos y herramientas de visualización. Se requiere conocimiento en SQL, Python y R.",
+        "data": {
+            "technology": "python",
+            "modalidad": "barcelona",
+            "nivel": "semi-senior"
+        }
+    },
+    {
+        "id": "5",
+        "titulo": "Backend Developer Python",
+        "empresa": "ServerSide Corp",
+        "ubicacion": "Remoto",
+        "descripcion": "Buscamos desarrollador backend con experiencia en Django o Flask, diseño de APIs REST y bases de datos PostgreSQL.",
+        "data": {
+            "technology": "python",
+            "modalidad": "remoto",
+            "nivel": "junior"
+        }
+    },
+    {
+        "id": "6",
+        "titulo": "Ingeniero de Machine Learning",
+        "empresa": "AI Vision Labs",
+        "ubicacion": "Madrid",
+        "descripcion": "Buscamos ingeniero con experiencia en Python, pandas y scikit-learn para el desarrollo de modelos predictivos aplicados a datos de clientes.",
+        "data": {
+            "technology": "python",
+            "modalidad": "madrid",
+            "nivel": "senior"
+        }
+    },
+    {
+        "id": "7",
+        "titulo": "Desarrollador Java Backend",
+        "empresa": "Enterprise Systems SA",
+        "ubicacion": "Madrid",
+        "descripcion": "Buscamos desarrollador Java con experiencia en Spring Boot, microservicios y bases de datos relacionales. Se valora experiencia con Kafka.",
+        "data": {
+            "technology": "java",
+            "modalidad": "madrid",
+            "nivel": "semi-senior"
+        }
+    },
+    {
+        "id": "8",
+        "titulo": "Java Developer Semi-Senior",
+        "empresa": "FinTech Solutions",
+        "ubicacion": "Remoto",
+        "descripcion": "Empresa del sector financiero busca desarrollador Java con conocimientos en Spring Framework, JPA/Hibernate y buenas prácticas de testing.",
+        "data": {
+            "technology": "java",
+            "modalidad": "remoto",
+            "nivel": "semi-senior"
+        }
+    },
+    {
+        "id": "9",
+        "titulo": "Desarrollador JavaScript Full Stack",
+        "empresa": "WebCraft Studio",
+        "ubicacion": "Remoto",
+        "descripcion": "Buscamos desarrollador full stack con dominio de JavaScript moderno, Express en backend y buenas prácticas de testing con Jest.",
+        "data": {
+            "technology": "js",
+            "modalidad": "remoto",
+            "nivel": "semi-senior"
+        }
+    },
+    {
+        "id": "10",
+        "titulo": "JavaScript Developer Junior",
+        "empresa": "CodeStart Agency",
+        "ubicacion": "Barcelona",
+        "descripcion": "Buscamos perfil junior con conocimientos sólidos de JavaScript, HTML y CSS para unirse a un equipo de desarrollo de aplicaciones web.",
+        "data": {
+            "technology": "js",
+            "modalidad": "barcelona",
+            "nivel": "junior"
+        }
+    },
+    {
+        "id": "11",
+        "titulo": "Backend Developer Node.js",
+        "empresa": "API Masters",
+        "ubicacion": "Remoto",
+        "descripcion": "Buscamos desarrollador backend con experiencia en Node.js, Express y bases de datos NoSQL como MongoDB. Se valora experiencia con Docker.",
+        "data": {
+            "technology": "node",
+            "modalidad": "remoto",
+            "nivel": "junior"
+        }
+    },
+    {
+        "id": "12",
+        "titulo": "Ingeniero Node.js Semi-Senior",
+        "empresa": "Scalable Systems",
+        "ubicacion": "Madrid",
+        "descripcion": "Buscamos ingeniero con experiencia en Node.js y arquitecturas orientadas a eventos para el desarrollo de servicios escalables en la nube.",
+        "data": {
+            "technology": "node",
+            "modalidad": "madrid",
+            "nivel": "semi-senior"
+        }
+    }
+]

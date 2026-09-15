@@ -1,21 +1,8 @@
-const jobs = document.querySelector(".jobs-results");
-
-jobs?.addEventListener("click", () => {
-    const element = event.target
-
-    if (element.classList.contains("button-apply")) {
-        element.classList.add("is-applied"),
-            element.textContent = "¡Aplicado!",
-            element.disabled = true
-    }
-})
-
-
 
 const filterLocation = document.querySelector("#filter-location");
 
 filterLocation.addEventListener("change", function () {
-    let articles = document.querySelectorAll("article")
+    const articles = document.querySelectorAll(".job-article")
 
     if (filterLocation.value == "barcelona") {
         articles.forEach(function (elemento) {
@@ -50,4 +37,23 @@ filterLocation.addEventListener("change", function () {
     }
 })
 
+const filterMod = document.querySelector("#filter-technology")
 
+filterMod.addEventListener("change", function () {
+    const selected = filterMod.value
+
+    const articles = document.querySelectorAll(".job-article")
+
+
+    articles.forEach(article => {
+        const tech = article.dataset.tech
+
+        if (selected === "" || selected === tech) {
+            article.classList.remove("invisible")
+        } else {
+            article.classList.add("invisible")
+        }
+    })
+
+
+})

@@ -92,7 +92,13 @@ header {
 
 }
 
-.jobs-hero>div:nth-child(4) {
+#serch-job {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+}
+
+#serch-job>div:nth-child(2) {
     gap: 10px;
 
     select {
