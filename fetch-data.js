@@ -1,4 +1,7 @@
 const container = document.querySelector(".jobs-results")
+
+const PAGE_MAX = 3
+
 fetch("data.json")
     .then((response) => {
         return response.json();
