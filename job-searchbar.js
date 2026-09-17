@@ -1,6 +1,4 @@
 const searchbar = document.querySelector("#searchbar")
-console.log(searchbar)
-
 
 searchbar.addEventListener("input", () => {
     const articles = document.querySelectorAll(".job-article")
