@@ -19,6 +19,9 @@ function renderOfertas(page) {
 
     let jobsPagina = allJobs.slice(inicio, fin)
 
+
+    container.innerHTML = ""
+
     jobsPagina.forEach(oferta => {
         const article = document.createElement("article")
         article.classList.add("job-article")
@@ -48,9 +51,13 @@ function generarBotones() {
     for (let i = 1; i <= totalPaginas; i++) {
         let svgRightPosition = nav.lastElementChild
         console.log(svgRightPosition)
-        const pagination = document.createElement("a")
+        const pagination = document.createElement("button")
         pagination.textContent = i
-        pagination.href = "#"
+
+        pagination.addEventListener("click", function () {
+            renderOfertas(i)
+
+        })
         nav.insertBefore(pagination, svgRightPosition)
     }
 
