@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Portal de empleo</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="description" content="Portal de empleo para realizar tus sueños profesionales" />
+    <script type="module" src="script.js"></script>
+
+    <script type="module">
+        import React from "https://esm.sh/react?dev";
+        import ReactDOM from "https://esm.sh/react-dom/client?dev"
+
+        window.React = React
+        window.ReactDOM = ReactDOM
+    </script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js">
+
+    </script>
+
+    <script type="text/babel">
+        //Componente de React
+        function Saludo({ nombre, color }) {
+            return <h2 style={{ color: color }}>
+                Hola, {nombre}
+            </h2>
+        }
+
+        function JobCard({ titulo, empresa, ubicacion, descripcion }) {
+            return (
+                <article>
+                    <div>
+                        <h4>{titulo}</h4>
+                        <h5>{empresa} | {ubicacion}</h5>
+                        <p>{descripcion}</p>
+                    </div>
+                    <div>
+                        <button className="button-apply">Aplicar</button>
+                    </div>
+                </article>
+            )
+        }
+
+        function App() {
+            return (
+                <>
+                    <JobCard titulo="Desarrollador" empresa="Empresa paco" ubicacion="remoto" descripcion="EOEO" />
+                    <JobCard titulo="Desarrollador" empresa="Empresa paco" ubicacion="remoto" descripcion="EOEO" />
+                    <JobCard titulo="Desarrollador" empresa="Empresa paco" ubicacion="remoto" descripcion="EOEO" />
+                </>
+            )
+        }
+
+        const rootEl = document.querySelector("#react-root");
+        const root = ReactDOM.createRoot(rootEl)
+        root.render(<App />)
+    </script>
+
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            DevJobs
+        </h1>
+        <nav>
+            <a href="jobs.html" target="_self" rel="noopener noreferrer">Buscar</a>
+            <a href="#" target="_self" rel="noopener noreferrer">Empleos</a>
+            <a href="#" target="_self" rel="noopener noreferrer">Empresas</a>
+            <a href="#" target="_self" rel="noopener noreferrer">Salarios</a>
+
+        </nav>
+
+        <div>
+            <button>Publicar un empleo</button>
+            <button>Iniciar sesión</button>
+        </div>
+
+    </header>
+    <main>
+        <section class="results">
+            <footer class="jobs-results">
+                <h3>Empleos disponibles</h3>
+                <div id="react-root"></div>
+            </footer>
+        </section>
+    </main>
+    <footer id="footer">
+        <small>&copy; 2026 DevJobs. Todos los derechos reservados.</small>
+    </footer>
+
+</body>
+
+</html>
